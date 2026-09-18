@@ -1,0 +1,40 @@
+/* ============================================================
+   Design tokens — change colors/spacing here, nowhere else
+   ============================================================ */
+:root{
+  /* surfaces */
+  --bg:            #0d1116;
+  --surface:       #14181f;
+  --surface-2:     #1a1f28;
+  --border:        rgba(255,255,255,.10);
+  --border-strong: rgba(255,255,255,.18);
+
+  /* accent */
+  --accent:        #00df8f;
+  --accent-dim:    #00b373;
+  --accent-glow:   rgba(0,223,143,.30);
+  --accent-soft:   rgba(0,223,143,.08);
+
+  /* text */
+  --text:          #ffffff;
+  --text-soft:     #c8cdd6;
+  --muted:         #9ca3af;
+  --muted-dim:     #6b7280;
+
+  /* type */
+  --font-display: 'Space Grotesk', system-ui, -apple-system, 'Segoe UI', sans-serif;
+  --font-sans:    'Inter', system-ui, -apple-system, 'Segoe UI', sans-serif;
+  --font-mono:    'JetBrains Mono', ui-monospace, 'SF Mono', Menlo, monospace;
+
+  /* layout */
+  --container:     1200px;
+  --gutter:        clamp(20px, 4vw, 48px);
+  --section-pad:   clamp(80px, 12vh, 140px);
+  --radius:        16px;
+  --radius-sm:     10px;
+  --radius-pill:   999px;
+
+  /* motion */
+  --ease:          cubic-bezier(.32,.72,0,1);
+  --dur:           .6s;
+}

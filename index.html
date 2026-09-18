@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Catalin Ursu — Unity Gameplay Engineer</title>
+<meta name="description" content="Unity Gameplay Engineer with 6+ years of experience. Gameplay systems, architecture, UI, and performance optimization.">
+<link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="css/tokens.css">
+<link rel="stylesheet" href="css/base.css">
+<link rel="stylesheet" href="css/components.css">
+<link rel="stylesheet" href="css/sections.css">
+</head>
+<body>
+
+<!-- ============ NAV ============ -->
+<header class="nav" id="nav">
+  <div class="nav__inner">
+    <a href="#hello" class="nav__logo">CATALIN<span>.</span></a>
+
+    <nav class="nav__links" id="navLinks">
+      <a href="#hello" class="nav__link">Hello</a>
+      <a href="#about" class="nav__link">About</a>
+      <a href="#experience" class="nav__link">Experience</a>
+      <a href="#projects" class="nav__link">Projects</a>
+      <a href="#contact" class="nav__link">Contact</a>
+    </nav>
+
+    <a class="nav__cta" href="assets/cv/Catalin_Ursu_CV.pdf" download>
+      <span class="dot"></span> CV
+    </a>
+
+    <button class="nav__burger" id="navBurger" aria-label="Menu" aria-expanded="false">
+      <span></span><span></span>
+    </button>
+  </div>
+</header>
+
+<main>
+
+<!-- ============ HELLO ============ -->
+<section class="hello" id="hello">
+  <div class="hello__grid-overlay" aria-hidden="true"></div>
+  <div class="hello__ghost" aria-hidden="true">UNITY</div>
+
+  <div class="container hello__inner">
+    <div class="hello__text">
+      <p class="hello__statement">
+        I build Unity games that stay <span class="accent">fast</span>,
+        and codebases that stay <span class="accent">workable</span> once the project grows.
+      </p>
+
+      <p class="hello__lede">
+        Six years of production Unity — gameplay systems, modular architecture, reactive UI,
+        and the profiling work behind every frame. Mobile, AR, VR and PC.
+      </p>
+
+      <div class="hello__actions">
+        <a href="#projects" class="btn btn--primary">
+          View projects
+          <svg viewBox="0 0 24 24" width="16" height="16" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </a>
+        <a href="#contact" class="btn btn--ghost"><span class="dot"></span> Contact me</a>
+      </div>
+    </div>
+
+    <!-- draggable ID badge -->
+    <div class="badge-zone">
+      <div class="badge" id="idBadge">
+        <div class="badge__inner">
+          <div class="badge__photo">
+            <img src="assets/img/portrait.jpg" alt="Catalin Ursu" draggable="false">
+            <div class="badge__fade"></div>
+            <div class="badge__id">
+              <p class="badge__name">Catalin Ursu</p>
+              <p class="badge__role">Unity Gameplay Engineer · 6+ years</p>
+            </div>
+          </div>
+          <div class="badge__meta">
+            <span class="badge__pulse"><i></i> available</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- stats carousel -->
+  <div class="stats" id="stats">
+    <p class="stats__label">Measured impact</p>
+    <div class="stats__track" id="statsTrack"><!-- injected by js/stats.js --></div>
+    <div class="stats__nav">
+      <button class="stats__arrow" data-dir="-1" aria-label="Previous stat">
+        <svg viewBox="0 0 24 24" width="16" height="16"><path d="M15 6l-6 6 6 6" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+      </button>
+      <button class="stats__arrow" data-dir="1" aria-label="Next stat">
+        <svg viewBox="0 0 24 24" width="16" height="16"><path d="M9 6l6 6-6 6" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+      </button>
+    </div>
+  </div>
+</section>
+
+<!-- ============ ABOUT ============ -->
+<section class="section about" id="about">
+  <div class="container">
+    <h2 class="section__title center reveal">ABOUT <span class="stroke">ME</span><span class="accent">.</span></h2>
+
+    <div class="about__intro reveal">
+      <p class="body-text">
+        I'm a Unity Gameplay Engineer based in Chișinău, six years into building production titles
+        for mobile, AR, VR and PC. Most of my work sits underneath what players see: the gameplay
+        systems, the dependency-injected architecture, and the UI layer other people extend later.
+      </p>
+      <p class="body-text">
+        In practice that means composing projects with Zenject, driving flow through UniTask and R3
+        instead of Update loops, and building UI that survives a redesign without a rewrite. The
+        other half of the job is performance — profiling with Unity's toolset, cutting draw calls,
+        batching, and shrinking memory with Addressables until the build runs on the weakest device
+        in the target list.
+      </p>
+      <p class="body-text">
+        I've owned features end to end (a DLC card system, a subtitle system, cross-platform
+        multiplayer sync), worked in small teams where architecture decisions are shared, and
+        maintain my own Unity packages to keep the tooling reusable across projects.
+      </p>
+    </div>
+
+    <!-- Results -->
+    <div class="subsec reveal">
+      <h3 class="subsec__title">Results</h3>
+    </div>
+
+    <div class="results reveal">
+      <a class="result-card result-card--link" href="#projects" data-goto-project="work:0">
+        <p class="result-card__num phrase">12+ Shipped Projects</p>
+        <p class="result-card__label">AR · VR · Mobile · PC</p>
+        <span class="result-card__go">See the work
+          <svg viewBox="0 0 24 24" width="14" height="14" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </span>
+      </a>
+
+      <a class="result-card result-card--link" href="#projects" data-goto-project="pet:0">
+        <p class="result-card__num phrase accent">3 Personal Projects</p>
+        <p class="result-card__label">Showcase, Helpers, IdleNumber</p>
+        <span class="result-card__go">Open projects
+          <svg viewBox="0 0 24 24" width="14" height="14" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </span>
+      </a>
+    </div>
+
+    <!-- Skills -->
+    <div class="subsec reveal">
+      <h3 class="subsec__title">Skills</h3>
+    </div>
+
+    <div class="toolkit reveal">
+      <div id="stackGroups"><!-- injected by js/stack.js --></div>
+    </div>
+
+    <!-- Education -->
+    <div class="subsec reveal">
+      <h3 class="subsec__title">Education</h3>
+    </div>
+    <div class="edu reveal" id="educationList"><!-- injected by js/about.js --></div>
+
+    <!-- Languages -->
+    <div class="subsec reveal">
+      <h3 class="subsec__title">Languages</h3>
+    </div>
+    <div class="langs reveal" id="languageList"><!-- injected by js/about.js --></div>
+  </div>
+</section>
+
+<!-- ============ EXPERIENCE ============ -->
+<section class="section experience" id="experience">
+  <div class="container">
+    <h2 class="section__title center reveal">EXPE<span class="stroke">RIENCE</span><span class="accent">.</span></h2>
+    <div class="accordion" id="experienceList"><!-- injected by js/experience.js --></div>
+  </div>
+</section>
+
+<!-- ============ PROJECTS ============ -->
+<section class="section projects" id="projects">
+  <div class="container">
+    <h2 class="section__title center reveal">PRO<span class="stroke">JECTS</span><span class="accent">.</span></h2>
+
+    <div class="subsec reveal">
+      <h3 class="subsec__title">Commercial Projects</h3>
+      <p class="subsec__note">A selection of the production work I've shipped with clients</p>
+    </div>
+    <div class="pcar" id="workCarousel"><!-- injected by js/projects.js --></div>
+
+    <div class="subsec reveal">
+      <h3 class="subsec__title">Pet Projects</h3>
+      <p class="subsec__note">Built and maintained on my own time — all open source</p>
+    </div>
+    <div class="pcar" id="petCarousel"><!-- injected by js/projects.js --></div>
+  </div>
+</section>
+
+</main>
+
+<!-- ============ CONTACT ============ -->
+<footer class="contact" id="contact">
+  <div class="contact__ghost" aria-hidden="true">CONTACT</div>
+
+  <div class="container contact__inner">
+    <h2 class="section__title center reveal">CON<span class="stroke">TACT</span><span class="accent">.</span></h2>
+
+    <p class="body-text contact__bio reveal">
+      Open to Unity gameplay and systems roles — remote or relocation within the EU.
+      Fastest way to reach me is email.
+    </p>
+
+    <div class="contact__actions reveal">
+      <a href="mailto:cat.ursu30@gmail.com" class="btn btn--primary">
+        <svg viewBox="0 0 24 24" width="17" height="17" aria-hidden="true"><path d="M3 7l9 6 9-6M4 5h16a1 1 0 011 1v12a1 1 0 01-1 1H4a1 1 0 01-1-1V6a1 1 0 011-1z" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        Gmail
+      </a>
+      <a href="https://linkedin.com/in/catalin-ursu" target="_blank" rel="noopener" class="btn btn--ghost">
+        <svg viewBox="0 0 24 24" width="17" height="17" aria-hidden="true" fill="currentColor"><path d="M4.98 3.5A2.5 2.5 0 112.5 6 2.5 2.5 0 014.98 3.5zM3 8.98h4v12H3zM10 8.98h3.8v1.64h.05a4.17 4.17 0 013.75-2.06c4 0 4.75 2.63 4.75 6.06v6.36h-4v-5.64c0-1.35-.03-3.08-1.88-3.08-1.88 0-2.17 1.47-2.17 2.98v5.74h-4z"/></svg>
+        LinkedIn
+      </a>
+      <a href="https://github.com/CatalinUrsu" target="_blank" rel="noopener" class="btn btn--ghost">
+        <svg viewBox="0 0 24 24" width="17" height="17" aria-hidden="true" fill="currentColor"><path d="M12 2a10 10 0 00-3.16 19.49c.5.09.68-.22.68-.48v-1.7c-2.78.6-3.37-1.34-3.37-1.34-.45-1.16-1.11-1.47-1.11-1.47-.9-.62.07-.6.07-.6 1 .07 1.53 1.03 1.53 1.03.89 1.52 2.34 1.08 2.91.83.09-.65.35-1.09.63-1.34-2.22-.25-4.55-1.11-4.55-4.94 0-1.09.39-1.98 1.03-2.68-.1-.25-.45-1.27.1-2.64 0 0 .84-.27 2.75 1.02a9.5 9.5 0 015 0c1.91-1.29 2.75-1.02 2.75-1.02.55 1.37.2 2.39.1 2.64.64.7 1.03 1.59 1.03 2.68 0 3.84-2.34 4.68-4.57 4.93.36.31.68.92.68 1.85v2.74c0 .27.18.58.69.48A10 10 0 0012 2z"/></svg>
+        GitHub
+      </a>
+      <a href="assets/cv/Catalin_Ursu_CV.pdf" download class="btn btn--ghost">
+        <svg viewBox="0 0 24 24" width="17" height="17" aria-hidden="true"><path d="M12 4v12m0 0l-5-5m5 5l5-5M5 20h14" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        Download CV
+      </a>
+    </div>
+
+    <div class="contact__bottom">
+      <p>© <span id="year">2026</span> Catalin Ursu</p>
+      <p>Chișinău, Moldova · open to relocation</p>
+    </div>
+  </div>
+</footer>
+
+<script src="js/data.js"></script>
+<script src="js/nav.js"></script>
+<script src="js/badge.js"></script>
+<script src="js/stats.js"></script>
+<script src="js/stack.js"></script>
+<script src="js/about.js"></script>
+<script src="js/experience.js"></script>
+<script src="js/projects.js"></script>
+<script src="js/reveal.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>
