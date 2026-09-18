@@ -10,12 +10,23 @@ desktop.ini
 
 # Editors / IDEs
 .vscode/
-.idea/
 *.swp
 *.swo
 *.sublime-project
 *.sublime-workspace
 *~
+
+# JetBrains Rider / ReSharper
+.idea/
+.idea.*/
+*.sln.iml
+*.iml
+*.ipr
+*.iws
+_ReSharper*/
+*.[Rr]e[Ss]harper
+*.DotSettings.user
+.fleet/
 
 # Node / tooling
 node_modules/
